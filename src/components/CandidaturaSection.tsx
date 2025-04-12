@@ -45,7 +45,7 @@ const teamMembers: TeamMember[] = [
     name: "Mavi Jiménez Sarmiento",
     position: "Presidenta de Recreo",
     age: 60,
-    image: "/lovable-uploads/686343a7-21cc-45b8-a13e-a728a3772b66.png"
+    image: "/lovable-uploads/974a134d-515b-479c-b54c-785d3f3af4d3.png"
   },
   {
     name: "Elena Mª Rodríguez Fominaya",
