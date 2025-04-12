@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { Calendar, Clock, MapPin } from "lucide-react";
-
 const VotacionSection = () => {
-  return (
-    <section id="votacion" className="section-padding bg-white">
-      <div className="container mx-auto px-4">
+  return <section id="votacion" className="section-padding bg-white py-0">
+      <div className="container mx-auto px-4 py-[20px]">
         <h2 className="text-4xl md:text-5xl font-bold text-nautical-blue mb-12 font-playfair text-center">Información de Votación</h2>
         
         <div className="max-w-4xl mx-auto">
@@ -46,14 +43,10 @@ const VotacionSection = () => {
           </div>
           
           <div className="mt-8">
-            <div className="bg-nautical-blue text-white p-6 rounded-lg">
-              <h3 className="text-3xl font-bold text-center font-playfair">Presentación del Programa</h3>
-            </div>
+            
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default VotacionSection;

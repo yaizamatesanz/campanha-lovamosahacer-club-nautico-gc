@@ -1,12 +1,8 @@
-
 import { useState } from 'react';
 import { ChevronDown } from "lucide-react";
-
 const CartaSocioSection = () => {
   const [expanded, setExpanded] = useState(false);
-
-  return (
-    <section id="carta" className="section-padding bg-nautical-blue">
+  return <section id="carta" className="section-padding bg-nautical-blue py-0">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 font-playfair text-center">Carta a los socios</h2>
@@ -29,8 +25,7 @@ const CartaSocioSection = () => {
                   </p>
                   
                   {/* Additional paragraphs will be shown when expanded */}
-                  {expanded && (
-                    <>
+                  {expanded && <>
                       <p className="mb-4 text-white">
                         En esta nueva etapa me acompañan algunos de los miembros de la anterior Junta Directiva que desempeñaron 
                         una labor efectiva, completa y exitosa, a los que se le suman otros nuevos, personas que viven intensamente 
@@ -50,17 +45,13 @@ const CartaSocioSection = () => {
                         <span className="font-bold">Adolfo López Martínez</span><br />
                         Candidato a Presidente del Real Club Náutico de Gran Canaria
                       </p>
-                    </>
-                  )}
+                    </>}
                 </div>
               </div>
             </div>
             
             <div className="text-center mt-8">
-              <button 
-                onClick={() => setExpanded(!expanded)}
-                className="inline-flex items-center gap-2 bg-white/10 text-white border border-white/30 rounded-md px-6 py-3 hover:bg-white/20 transition-colors"
-              >
+              <button onClick={() => setExpanded(!expanded)} className="inline-flex items-center gap-2 bg-white/10 text-white border border-white/30 rounded-md px-6 py-3 hover:bg-white/20 transition-colors">
                 {expanded ? "Leer menos" : "Leer carta completa"}
                 <ChevronDown className={`h-5 w-5 transition-transform ${expanded ? "rotate-180" : ""}`} />
               </button>
@@ -68,9 +59,6 @@ const CartaSocioSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CartaSocioSection;
-
