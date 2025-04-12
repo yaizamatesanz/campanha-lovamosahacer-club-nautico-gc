@@ -86,7 +86,7 @@ const initiatives: Initiative[] = [
 
 const DecalogoSection = () => {
   return (
-    <section id="decalogo" className="section-padding bg-white">
+    <section id="decalogo" className="section-padding bg-[#D3E4FD]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-nautical-blue mb-6 font-playfair">Decálogo de iniciativas</h2>
