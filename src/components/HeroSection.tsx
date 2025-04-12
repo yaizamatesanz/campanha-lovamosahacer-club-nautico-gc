@@ -34,24 +34,12 @@ const HeroSection = () => {
           ></iframe>
         </div>
         
-        {/* Voting information - Below Video but hidden on homepage as per the design */}
-        <div className="mt-12 hidden">
-          <div className="bg-nautical-gold/90 text-nautical-black py-4 px-8 rounded-md max-w-3xl mx-auto">
+        {/* Voting information - Now visible below the video */}
+        <div className="mt-12">
+          <div className="bg-gray-100 text-nautical-blue py-4 px-8 rounded-md max-w-5xl mx-auto">
             <p className="text-lg md:text-xl font-medium text-center">
               Vota el 29 de abril de 10:00 a 20:00 en el Club Náutico de Gran Canaria
             </p>
-          </div>
-          
-          <div className="mt-8 text-center">
-            <Button 
-              asChild
-              size="lg"
-              className="bg-nautical-gold text-nautical-black hover:bg-nautical-gold/90 font-medium"
-            >
-              <a href="#votacion">
-                Información de Votación
-              </a>
-            </Button>
           </div>
         </div>
       </div>
