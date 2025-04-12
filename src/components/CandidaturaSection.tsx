@@ -27,7 +27,7 @@ const teamMembers: TeamMember[] = [
     name: "Joaquín Espinosa Chirino",
     position: "Secretario",
     age: 54,
-    image: "/lovable-uploads/acde3494-7bf6-4a69-bbde-3055380d8c7d.png"
+    image: "/lovable-uploads/eb682b10-73f9-4393-aead-61c90f6e2cb8.png"
   },
   {
     name: "Matías Jiménez Brito",
