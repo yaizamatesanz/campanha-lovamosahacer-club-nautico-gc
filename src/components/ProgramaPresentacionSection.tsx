@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Calendar, Clock, MapPin } from "lucide-react";
 
@@ -9,7 +8,7 @@ const ProgramaPresentacionSection = () => {
           <div className="bg-white p-8 rounded-lg shadow-md mb-8">
             <div className="space-y-6">
               <div className="bg-nautical-blue text-white p-6 rounded-lg">
-                <h3 className="text-3xl font-bold text-center font-playfair">Jornada Electoral</h3>
+                <h3 className="text-3xl font-bold text-center font-playfair">Presentación del Programa</h3>
               </div>
               
               {/* Fecha */}
