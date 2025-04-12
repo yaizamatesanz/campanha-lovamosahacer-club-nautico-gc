@@ -1,35 +1,13 @@
 
 import { Button } from "@/components/ui/button";
-import { useState, useEffect, useRef } from "react";
-import { Play, Pause } from "lucide-react";
+import { useState, useEffect } from "react";
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(true); // Auto-play by default
-  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     setIsVisible(true);
-    
-    // Auto-play video when component mounts
-    if (videoRef.current) {
-      videoRef.current.play().catch(error => {
-        console.log("Auto-play prevented:", error);
-        setIsPlaying(false);
-      });
-    }
   }, []);
-
-  const togglePlay = () => {
-    if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.pause();
-      } else {
-        videoRef.current.play();
-      }
-      setIsPlaying(!isPlaying);
-    }
-  };
 
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center bg-nautical-blue text-white py-20">
@@ -37,27 +15,13 @@ const HeroSection = () => {
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-nautical-blue/60 z-10"></div>
         <div className="w-full h-full flex items-center justify-center">
-          <video
-            ref={videoRef}
+          <iframe 
+            src="https://drive.google.com/file/d/1ZuSsKRMN93DQiDqovdD2sFjU7s-9xgwM/preview" 
+            width="100%" 
+            height="100%" 
+            allow="autoplay"
             className="w-full h-full object-cover"
-            poster="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
-            muted
-            loop
-            playsInline
-          >
-            {/* Sailing video loop */}
-            <source src="https://player.vimeo.com/external/517090081.sd.mp4?s=46d9f3883f0da233831f057f7e688a04b34f0339&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          
-          {/* Video control button */}
-          <button 
-            onClick={togglePlay}
-            className="absolute z-20 bg-white/10 hover:bg-white/20 rounded-full p-4 backdrop-blur-sm transition-all duration-300"
-            aria-label={isPlaying ? "Pause video" : "Play video"}
-          >
-            {isPlaying ? <Pause className="h-8 w-8 text-white" /> : <Play className="h-8 w-8 text-white" />}
-          </button>
+          ></iframe>
         </div>
       </div>
 
