@@ -93,7 +93,7 @@ const teamMembers: TeamMember[] = [
     name: "Mª José Ortiz Guillén",
     position: "Vocal (Cultura)",
     age: 48,
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+    image: "/lovable-uploads/57307bf9-5466-44a6-a5d3-e88d68830692.png"
   },
   {
     name: "Carmen Viniegra Guinea",
