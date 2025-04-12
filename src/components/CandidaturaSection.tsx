@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
@@ -77,7 +76,7 @@ const teamMembers: TeamMember[] = [
     name: "Alicia Cabrera Mateos",
     position: "Vicepresidenta de Recreo",
     age: 50,
-    image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+    image: "/lovable-uploads/66cdc463-6509-491d-b2c1-dcf3251fe1e0.png"
   },
   {
     name: "Fernando Jiménez del Campo",
