@@ -39,9 +39,16 @@ const NavBar = () => {
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex justify-between items-center">
-          <a href="#inicio" className="font-playfair text-xl font-semibold">
-            <span className="text-nautical-blue font-bold tracking-wide">LO VAMOS</span>{" "}
-            <span className="text-nautical-gold font-bold">A HACER</span>
+          <a href="#inicio" className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/34b02698-6e92-4c84-b2f0-9530a14b1a89.png" 
+              alt="Real Club Náutico de Gran Canaria Logo" 
+              className="h-10 w-10 object-contain"
+            />
+            <span className="font-playfair text-xl font-semibold">
+              <span className="text-nautical-blue font-bold tracking-wide">LO VAMOS</span>{" "}
+              <span className="text-nautical-gold font-bold">A HACER</span>
+            </span>
           </a>
 
           {/* Desktop menu */}
