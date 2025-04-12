@@ -5,12 +5,12 @@ const ProgramaPresentacionSection = () => {
   return <section className="section-padding bg-white rounded-sm">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white p-8 rounded-lg shadow-md mb-8">
+          <div className="bg-nautical-blue text-white p-6 rounded-t-lg">
+            <h3 className="text-3xl font-bold text-center font-playfair">Presentación del Programa</h3>
+          </div>
+          
+          <div className="bg-white p-8 rounded-b-lg shadow-md">
             <div className="space-y-6">
-              <div className="bg-nautical-blue text-white p-6 rounded-lg">
-                <h3 className="text-3xl font-bold text-center font-playfair">Presentación del Programa</h3>
-              </div>
-              
               {/* Fecha */}
               <div className="flex items-start gap-4">
                 <Calendar className="h-8 w-8 text-nautical-gold flex-shrink-0 mt-1" />
