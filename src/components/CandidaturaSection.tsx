@@ -33,7 +33,7 @@ const teamMembers: TeamMember[] = [
     name: "Matías Jiménez Brito",
     position: "Contador",
     age: 57,
-    image: "/lovable-uploads/5afd1092-8d10-453e-9ea2-3a2f30010e0e.png"
+    image: "/lovable-uploads/02d75ef8-ab64-4520-9be1-da7579b81b2d.png"
   },
   {
     name: "Ana Blázquez",
