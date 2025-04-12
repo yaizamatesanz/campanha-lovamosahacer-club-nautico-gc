@@ -1,5 +1,4 @@
-
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -14,27 +13,11 @@ const navLinks = [
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  // Handle scroll event to change navbar background
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
     <nav 
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        scrolled ? "bg-nautical-white shadow-md py-2" : "bg-transparent py-4"
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white shadow-sm py-4"
       )}
     >
       <div className="container mx-auto px-4 lg:px-8">
@@ -97,4 +80,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
