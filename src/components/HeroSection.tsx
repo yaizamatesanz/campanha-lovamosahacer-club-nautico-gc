@@ -5,7 +5,7 @@ const HeroSection = () => {
   useEffect(() => {
     setIsVisible(true);
   }, []);
-  return <section id="inicio" className="relative bg-white text-nautical-blue pt-24 pb-16">
+  return <section id="inicio" className="relative bg-white text-nautical-blue pt-24 pb-16 rounded-sm">
       {/* Hero content */}
       <div className="container mx-auto px-4 relative z-20">
         <div className={`transition-all duration-1000 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} text-center max-w-5xl mx-auto`}>
