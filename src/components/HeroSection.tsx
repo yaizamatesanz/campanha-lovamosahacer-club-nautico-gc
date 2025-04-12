@@ -1,10 +1,14 @@
+
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
+  
   useEffect(() => {
     setIsVisible(true);
   }, []);
+  
   return <section id="inicio" className="relative bg-white text-nautical-blue pt-24 pb-16 rounded-sm">
       {/* Hero content */}
       <div className="container mx-auto px-4 relative z-20">
@@ -17,21 +21,22 @@ const HeroSection = () => {
             Adolfo López Martínez – Candidato a presidente del RCNGC
           </p>
         </div>
-        
-        {/* Video container */}
-        <div className="w-full max-w-5xl mx-auto relative rounded-lg overflow-hidden shadow-lg">
-          <iframe src="https://drive.google.com/file/d/1ZuSsKRMN93DQiDqovdD2sFjU7s-9xgwM/preview" width="100%" height="500" allow="autoplay" className="w-full border-0"></iframe>
-        </div>
-        
-        {/* Voting information - Now visible below the video */}
-        <div className="mt-12">
-          <div className="bg-gray-100 text-nautical-blue py-4 px-8 rounded-md max-w-5xl mx-auto">
-            <p className="text-lg md:text-xl font-medium text-center">
-              Vota el 29 de abril de 10:00 a 20:00 en el Club Náutico de Gran Canaria
-            </p>
-          </div>
+      </div>
+      
+      {/* Video container - full width */}
+      <div className="w-full relative rounded-lg overflow-hidden shadow-lg">
+        <iframe src="https://drive.google.com/file/d/1ZuSsKRMN93DQiDqovdD2sFjU7s-9xgwM/preview" width="100%" height="500" allow="autoplay" className="w-full border-0"></iframe>
+      </div>
+      
+      {/* Voting information - Now visible below the video */}
+      <div className="container mx-auto px-4 mt-12">
+        <div className="bg-gray-100 text-nautical-blue py-4 px-8 rounded-md max-w-5xl mx-auto">
+          <p className="text-lg md:text-xl font-medium text-center">
+            Vota el 29 de abril de 10:00 a 20:00 en el Club Náutico de Gran Canaria
+          </p>
         </div>
       </div>
     </section>;
 };
+
 export default HeroSection;
