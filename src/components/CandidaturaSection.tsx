@@ -21,7 +21,7 @@ const teamMembers: TeamMember[] = [
     name: "Fernando Ojeda Álvarez",
     position: "Comodoro",
     age: 52,
-    image: "/lovable-uploads/9ed82157-1765-41ef-9aba-1b08902bb443.png"
+    image: "/lovable-uploads/16013d2f-2dd0-41e9-904d-cad549c2b9c1.png"
   },
   {
     name: "Joaquín Espinosa Chirino",
