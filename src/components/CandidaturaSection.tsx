@@ -59,7 +59,7 @@ const teamMembers: TeamMember[] = [
     name: "Alejandro Martín Santana",
     position: "Vicepresidente",
     age: 63,
-    image: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+    image: "/lovable-uploads/bc0e4138-c93e-4468-a9f4-658e5a515250.png"
   },
   {
     name: "Manuel Padrón Rodríguez",
