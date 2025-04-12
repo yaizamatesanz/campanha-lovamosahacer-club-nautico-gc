@@ -1,25 +1,54 @@
 
 import { Button } from "@/components/ui/button";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { Play, Pause } from "lucide-react";
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
 
+  const togglePlay = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center bg-nautical-blue text-white py-20">
-      {/* Video background (placeholder) */}
+      {/* Video background with overlay */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 bg-nautical-blue/80 z-10"></div>
-        <div className="w-full h-full">
-          <img 
-            src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" 
-            alt="Background" 
+        <div className="absolute inset-0 bg-nautical-blue/60 z-10"></div>
+        <div className="w-full h-full flex items-center justify-center">
+          <video
+            ref={videoRef}
             className="w-full h-full object-cover"
-          />
+            poster="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
+            muted
+            playsInline
+          >
+            {/* Replace this with your actual video URL when available */}
+            <source src="https://cdn.videvo.net/videvo_files/video/premium/video0042/small_watermarked/sailing_boat_aerial2_preview.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          
+          {/* Video control button */}
+          <button 
+            onClick={togglePlay}
+            className="absolute z-20 bg-white/10 hover:bg-white/20 rounded-full p-4 backdrop-blur-sm transition-all duration-300"
+            aria-label={isPlaying ? "Pause video" : "Play video"}
+          >
+            {isPlaying ? <Pause className="h-8 w-8 text-white" /> : <Play className="h-8 w-8 text-white" />}
+          </button>
         </div>
       </div>
 
