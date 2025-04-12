@@ -34,13 +34,13 @@ const NavBar = () => {
     <nav 
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        scrolled ? "bg-white shadow-md py-2" : "bg-transparent py-4"
+        scrolled ? "bg-nautical-white shadow-md py-2" : "bg-transparent py-4"
       )}
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex justify-between items-center">
           <a href="#inicio" className="font-playfair text-xl font-semibold">
-            <span className="text-black font-bold tracking-wide">LO VAMOS</span>{" "}
+            <span className="text-nautical-blue font-bold tracking-wide">LO VAMOS</span>{" "}
             <span className="text-nautical-gold font-bold">A HACER</span>
           </a>
 
@@ -50,7 +50,7 @@ const NavBar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-primary hover:text-accent transition-colors font-medium"
+                className="text-nautical-blue hover:text-nautical-gold transition-colors font-medium"
               >
                 {link.name}
               </a>
@@ -59,7 +59,7 @@ const NavBar = () => {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden text-primary"
+            className="md:hidden text-nautical-blue"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -70,13 +70,13 @@ const NavBar = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-md px-4 py-4 absolute top-full left-0 right-0">
+        <div className="md:hidden bg-nautical-white shadow-md px-4 py-4 absolute top-full left-0 right-0">
           <div className="flex flex-col space-y-4">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-primary hover:text-accent transition-colors font-medium py-2"
+                className="text-nautical-blue hover:text-nautical-gold transition-colors font-medium py-2"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
@@ -90,3 +90,4 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
