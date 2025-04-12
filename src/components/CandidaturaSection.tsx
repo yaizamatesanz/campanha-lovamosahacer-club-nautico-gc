@@ -93,17 +93,31 @@ const CandidaturaSection = () => {
   return (
     <section id="candidatura" className="section-padding bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="section-title text-center">Nuestra Candidatura</h2>
+        <h2 className="section-title text-center mb-10">Candidatura</h2>
         
-        {/* Team photo */}
-        <div className="mb-12 overflow-hidden rounded-lg shadow-md">
+        {/* Team photo with text overlay */}
+        <div className="mb-12 overflow-hidden rounded-lg shadow-md relative">
           <AspectRatio ratio={16 / 7} className="bg-muted">
             <img 
               src="/lovable-uploads/9bb8737f-7814-4d8d-ac45-23e6b6d76f96.png" 
               alt="Equipo completo" 
               className="w-full h-full object-cover"
             />
+            <div className="absolute bottom-0 left-0 right-0 p-6 text-white bg-gradient-to-t from-[rgba(0,0,0,0.7)] to-transparent">
+              <h3 className="text-3xl md:text-4xl font-bold mb-2">Equipo Adolfo López</h3>
+              <p className="text-lg md:text-xl">Comprometidos con el futuro del Real Club Náutico</p>
+            </div>
           </AspectRatio>
+        </div>
+        
+        {/* Additional section title and description */}
+        <div className="max-w-4xl mx-auto mb-12 text-center">
+          <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">UNA TRIPULACIÓN COMPROMETIDA</h3>
+          <p className="text-muted-foreground text-lg">
+            Somos un equipo de socios y socias con experiencia, tiempo y ganas de trabajar por y para el 
+            Club. Creemos en la escucha activa, en el valor de lo compartido y en recuperar el espíritu del 
+            RCNGC desde la cercanía, el respeto y la acción.
+          </p>
         </div>
         
         {/* Featured member - President */}
