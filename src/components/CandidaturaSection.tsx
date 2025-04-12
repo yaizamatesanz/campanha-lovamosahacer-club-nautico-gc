@@ -140,8 +140,8 @@ const CandidaturaSection = () => {
                 </div>
                 <div className="flex flex-col justify-center p-6">
                   <h3 className="font-bold text-2xl text-primary mb-2">{president.name}</h3>
+                  {president.age && <p className="text-muted-foreground mb-1">{president.age} años</p>}
                   <p className="text-lg text-muted-foreground mb-1">{president.position}</p>
-                  {president.age && <p className="text-muted-foreground mb-4">{president.age} años</p>}
                   <p className="text-muted-foreground">
                     Con experiencia y dedicación, Adolfo López lidera un equipo comprometido 
                     con la renovación del Real Club Náutico de Gran Canaria. Su visión 
@@ -166,8 +166,8 @@ const CandidaturaSection = () => {
                 <h3 className="font-bold text-lg text-primary">{member.name}</h3>
               </CardHeader>
               <CardContent className="pt-0">
-                <p className="text-muted-foreground">{member.position}</p>
                 {member.age && <p className="text-sm text-muted-foreground">{member.age} años</p>}
+                <p className="text-muted-foreground">{member.position}</p>
               </CardContent>
             </Card>)}
         </div>
@@ -176,3 +176,4 @@ const CandidaturaSection = () => {
 };
 
 export default CandidaturaSection;
+
