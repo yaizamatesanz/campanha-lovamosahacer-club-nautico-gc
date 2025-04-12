@@ -21,13 +21,13 @@ const teamMembers: TeamMember[] = [
     name: "Fernando Ojeda Álvarez",
     position: "Comodoro",
     age: 52,
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+    image: "/lovable-uploads/9ed82157-1765-41ef-9aba-1b08902bb443.png"
   },
   {
     name: "Joaquín Espinosa Chirino",
     position: "Secretario",
     age: 54,
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+    image: "/lovable-uploads/acde3494-7bf6-4a69-bbde-3055380d8c7d.png"
   },
   {
     name: "Matías Jiménez Brito",
