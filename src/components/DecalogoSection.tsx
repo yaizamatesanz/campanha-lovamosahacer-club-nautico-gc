@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { 
   User, 
   Coins, 
@@ -24,26 +24,26 @@ interface Initiative {
 const initiatives: Initiative[] = [
   {
     number: 1,
-    title: "Dedicación al Socio",
-    description: "Dedicar tiempo al Club y a su gente, con atención directa y personalizada al socio/a.",
+    title: "Dedicar tiempo al Club y a su gente",
+    description: "Con atención directa y personalizada al socio/a.",
     icon: User
   },
   {
     number: 2,
-    title: "Gestión Responsable",
-    description: "Cuidar el presupuesto como si fuera propio, con responsabilidad, transparencia y calidad en proyectos y decisiones.",
+    title: "Cuidar el presupuesto como si fuera propio",
+    description: "Con responsabilidad, transparencia y calidad en proyectos y decisiones.",
     icon: Coins
   },
   {
     number: 3,
-    title: "Vida Social",
-    description: "Activar la vida social, aumentando la oferta de actividades con una imagen actualizada y moderna.",
+    title: "Activar la vida social",
+    description: "Aumentando la oferta de actividades con una imagen actualizada y moderna.",
     icon: Activity
   },
   {
     number: 4,
-    title: "Semana Grande",
-    description: "Instaurar la Semana Grande como cita emblemática del RCNGC, con la concentración de los actos más importantes de nuestra entidad.",
+    title: "Instaurar la Semana Grande",
+    description: "Como cita emblemática del RCNGC, con la concentración de los actos más importantes de nuestra entidad.",
     icon: Calendar
   },
   {
@@ -86,39 +86,41 @@ const initiatives: Initiative[] = [
 
 const DecalogoSection = () => {
   return (
-    <section id="decalogo" className="section-padding bg-gray-50">
+    <section id="decalogo" className="section-padding bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="section-title">Una Tripulación Comprometida</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Somos un equipo de 14+1 socios y socias con experiencia, tiempo y ganas de trabajar por y para el Club. 
-            Creemos en la escucha activa, en el valor de lo compartido y en recuperar el espíritu del RCNGC 
-            desde la cercanía, el respeto y la acción.
-          </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-nautical-blue mb-6 font-playfair">Decálogo de iniciativas</h2>
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-2xl md:text-3xl font-bold text-nautical-gold mb-6">UNA TRIPULACIÓN COMPROMETIDA</h3>
+            <p className="text-lg text-nautical-blue mx-auto">
+              Somos un equipo de 14+1 socios y socias con experiencia, tiempo y ganas de trabajar por y para 
+              el Club. Creemos en la escucha activa, en el valor de lo compartido y en recuperar el espíritu del 
+              RCNGC desde la cercanía, el respeto y la acción. Este decálogo resume los compromisos que 
+              asumimos como grupo para que el Club vuelva a ser un orgullo para todos.
+            </p>
+          </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {initiatives.map((initiative) => {
             const Icon = initiative.icon;
             return (
               <Card 
                 key={initiative.number} 
-                className="border-l-4 border-l-primary hover:shadow-md transition-shadow animate-fade-in" 
-                style={{animationDelay: `${initiative.number * 0.1}s`}}
+                className="border-l-4 border-l-nautical-gold bg-gray-50 hover:shadow-md transition-shadow"
               >
-                <CardHeader className="pb-2">
-                  <div className="flex items-center gap-4">
-                    <div className="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center">
-                      {initiative.number}
+                <CardContent className="p-6">
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="bg-nautical-blue text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl font-bold">
+                        {initiative.number}
+                      </div>
                     </div>
-                    <div className="flex items-center gap-3">
-                      <Icon className="text-primary w-6 h-6" />
-                      <h3 className="font-bold text-lg text-primary">{initiative.title}</h3>
+                    <div>
+                      <h3 className="font-bold text-xl text-nautical-blue mb-2">{initiative.title}</h3>
+                      <p className="text-nautical-blue">{initiative.description}</p>
                     </div>
                   </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{initiative.description}</p>
                 </CardContent>
               </Card>
             );
@@ -130,4 +132,3 @@ const DecalogoSection = () => {
 };
 
 export default DecalogoSection;
-
