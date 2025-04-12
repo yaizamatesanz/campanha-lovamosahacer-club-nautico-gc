@@ -1,12 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect } from "react";
+import NavBar from "@/components/NavBar";
+import HeroSection from "@/components/HeroSection";
+import CandidaturaSection from "@/components/CandidaturaSection";
+import DecalogoSection from "@/components/DecalogoSection";
+import ProyectosEstrellaSection from "@/components/ProyectosEstrellaSection";
+import CartaSocioSection from "@/components/CartaSocioSection";
+import VotacionSection from "@/components/VotacionSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
+  // Update document title
+  useEffect(() => {
+    document.title = "Adolfo López - Candidato a Presidente RCNGC";
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <NavBar />
+      <HeroSection />
+      <CandidaturaSection />
+      <DecalogoSection />
+      <ProyectosEstrellaSection />
+      <CartaSocioSection />
+      <VotacionSection />
+      <Footer />
     </div>
   );
 };
