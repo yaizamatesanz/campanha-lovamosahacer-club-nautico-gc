@@ -26,8 +26,10 @@ const HeroSection = () => {
       {/* Hero content */}
       <div className="container mx-auto px-4 relative z-20 text-center">
         <div className={`transition-all duration-1000 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 font-playfair leading-tight">
-            "Lo vamos a hacer"
+          <h1 className="mb-6 font-playfair leading-tight">
+            <span className="text-4xl md:text-6xl lg:text-7xl font-bold text-white">LO VAMOS</span>
+            <br />
+            <span className="text-4xl md:text-6xl lg:text-7xl font-bold text-nautical-gold">A HACER</span>
           </h1>
           <p className="text-xl md:text-2xl mb-12 max-w-2xl mx-auto">
             Adolfo López Martínez – Candidato a presidente del RCNGC

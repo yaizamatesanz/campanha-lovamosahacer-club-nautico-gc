@@ -39,8 +39,9 @@ const NavBar = () => {
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex justify-between items-center">
-          <a href="#inicio" className="text-primary font-playfair text-xl font-semibold">
-            Adolfo López
+          <a href="#inicio" className="font-playfair text-xl font-semibold">
+            <span className="text-black font-bold tracking-wide">LO VAMOS</span>{" "}
+            <span className="text-nautical-gold font-bold">A HACER</span>
           </a>
 
           {/* Desktop menu */}
