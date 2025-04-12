@@ -1,8 +1,9 @@
+
 import React from 'react';
 import { Calendar, Clock, MapPin } from "lucide-react";
 
 const ProgramaPresentacionSection = () => {
-  return <section className="section-padding bg-white rounded-sm pt-0">
+  return <section className="section-padding bg-white rounded-sm">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white p-8 rounded-lg shadow-md mb-8">
