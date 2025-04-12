@@ -33,7 +33,7 @@ const teamMembers: TeamMember[] = [
     name: "Matías Jiménez Brito",
     position: "Contador",
     age: 57,
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+    image: "/lovable-uploads/5afd1092-8d10-453e-9ea2-3a2f30010e0e.png"
   },
   {
     name: "Ana Blázquez",
@@ -45,7 +45,7 @@ const teamMembers: TeamMember[] = [
     name: "Mavi Jiménez Sarmiento",
     position: "Presidenta de Recreo",
     age: 60,
-    image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+    image: "/lovable-uploads/686343a7-21cc-45b8-a13e-a728a3772b66.png"
   },
   {
     name: "Elena Mª Rodríguez Fominaya",
@@ -63,7 +63,7 @@ const teamMembers: TeamMember[] = [
     name: "Manuel Padrón Rodríguez",
     position: "Vice-comodoro",
     age: 47,
-    image: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+    image: "/lovable-uploads/bce03a19-602a-4ec9-ba44-bc4423ae8f50.png"
   },
   {
     name: "Eduardo Ojeda Ensell",
