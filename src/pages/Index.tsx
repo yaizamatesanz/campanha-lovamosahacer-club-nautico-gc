@@ -7,6 +7,7 @@ import DecalogoSection from "@/components/DecalogoSection";
 import ProyectosEstrellaSection from "@/components/ProyectosEstrellaSection";
 import CartaSocioSection from "@/components/CartaSocioSection";
 import VotacionSection from "@/components/VotacionSection";
+import ProgramaPresentacionSection from "@/components/ProgramaPresentacionSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -24,6 +25,7 @@ const Index = () => {
       <ProyectosEstrellaSection />
       <CartaSocioSection />
       <VotacionSection />
+      <ProgramaPresentacionSection />
       <Footer />
     </div>
   );
