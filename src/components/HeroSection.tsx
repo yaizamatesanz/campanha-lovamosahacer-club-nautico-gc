@@ -5,11 +5,19 @@ import { Play, Pause } from "lucide-react";
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true); // Auto-play by default
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     setIsVisible(true);
+    
+    // Auto-play video when component mounts
+    if (videoRef.current) {
+      videoRef.current.play().catch(error => {
+        console.log("Auto-play prevented:", error);
+        setIsPlaying(false);
+      });
+    }
   }, []);
 
   const togglePlay = () => {
@@ -34,10 +42,11 @@ const HeroSection = () => {
             className="w-full h-full object-cover"
             poster="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
             muted
+            loop
             playsInline
           >
-            {/* Replace this with your actual video URL when available */}
-            <source src="https://cdn.videvo.net/videvo_files/video/premium/video0042/small_watermarked/sailing_boat_aerial2_preview.mp4" type="video/mp4" />
+            {/* Sailing video loop */}
+            <source src="https://player.vimeo.com/external/517090081.sd.mp4?s=46d9f3883f0da233831f057f7e688a04b34f0339&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           
@@ -86,4 +95,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
