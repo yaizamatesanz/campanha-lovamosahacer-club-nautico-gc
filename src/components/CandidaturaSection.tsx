@@ -9,7 +9,6 @@ interface TeamMember {
   featured?: boolean;
 }
 
-// Team members in specified order
 const teamMembers: TeamMember[] = [
   {
     name: "Adolfo López Martínez",
@@ -40,7 +39,7 @@ const teamMembers: TeamMember[] = [
     name: "Ana Blázquez",
     position: "Tesorera",
     age: 62,
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+    image: "/lovable-uploads/dcb3b991-c15d-405e-9d1c-af78437f0fb2.png"
   },
   {
     name: "Mavi Jiménez Sarmiento",
@@ -100,7 +99,7 @@ const teamMembers: TeamMember[] = [
     name: "Carmen Viniegra Guinea",
     position: "Vocal (Área)",
     age: 51,
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+    image: "/lovable-uploads/823cb587-8e33-41f5-a319-858c88200902.png"
   }
 ];
 
