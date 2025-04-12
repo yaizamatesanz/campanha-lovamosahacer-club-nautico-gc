@@ -99,7 +99,7 @@ const teamMembers: TeamMember[] = [
     name: "Carmen Viniegra Guinea",
     position: "Vocal (Área)",
     age: 51,
-    image: "/lovable-uploads/823cb587-8e33-41f5-a319-858c88200902.png"
+    image: "/lovable-uploads/45e26150-745e-44f0-8985-749304a31bf8.png"
   }
 ];
 
