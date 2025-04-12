@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -15,18 +16,14 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav 
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white shadow-sm py-4"
-      )}
-    >
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm py-4">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex justify-between items-center">
           <a href="#inicio" className="flex items-center space-x-3">
             <img 
               src="/lovable-uploads/34b02698-6e92-4c84-b2f0-9530a14b1a89.png" 
               alt="Real Club Náutico de Gran Canaria Logo" 
-              className="h-10 w-10 object-contain"
+              className="h-10 w-auto object-contain"
             />
             <span className="font-playfair text-xl font-semibold">
               <span className="text-nautical-blue font-bold tracking-wide">LO VAMOS</span>{" "}
@@ -35,12 +32,12 @@ const NavBar = () => {
           </a>
 
           {/* Desktop menu */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-6">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-nautical-blue hover:text-nautical-gold transition-colors font-medium"
+                className="text-nautical-blue hover:text-nautical-gold transition-colors font-medium text-sm border-b-2 border-transparent hover:border-nautical-gold px-1 py-1"
               >
                 {link.name}
               </a>
@@ -60,7 +57,7 @@ const NavBar = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden bg-nautical-white shadow-md px-4 py-4 absolute top-full left-0 right-0">
+        <div className="md:hidden bg-white shadow-md px-4 py-4 absolute top-full left-0 right-0">
           <div className="flex flex-col space-y-4">
             {navLinks.map((link) => (
               <a

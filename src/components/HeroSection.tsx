@@ -10,33 +10,32 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center bg-nautical-blue text-white py-20">
-      {/* Hero content - POSITIONED ABOVE THE VIDEO */}
-      <div className="container mx-auto px-4 relative z-20 flex flex-col items-center">
-        <div className={`transition-all duration-1000 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} mb-8`}>
-          <h1 className="mb-6 font-playfair leading-tight text-center">
-            <span className="text-4xl md:text-6xl lg:text-7xl font-bold text-nautical-gold">LO VAMOS</span>
-            <br />
-            <span className="text-4xl md:text-6xl lg:text-7xl font-bold text-nautical-white">A HACER</span>
+    <section id="inicio" className="relative bg-white text-nautical-blue pt-24 pb-16">
+      {/* Hero content */}
+      <div className="container mx-auto px-4 relative z-20">
+        <div className={`transition-all duration-1000 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} text-center max-w-5xl mx-auto`}>
+          <h1 className="mb-6 font-playfair leading-tight">
+            <span className="text-5xl md:text-7xl lg:text-8xl font-bold text-nautical-blue">LO VAMOS</span>
+            <span className="text-5xl md:text-7xl lg:text-8xl font-bold text-nautical-gold"> A HACER</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-4 max-w-2xl mx-auto text-nautical-white text-center">
+          <p className="text-xl md:text-2xl mb-10 mx-auto text-nautical-blue font-medium">
             Adolfo López Martínez – Candidato a presidente del RCNGC
           </p>
         </div>
         
         {/* Video container */}
-        <div className="w-full max-w-6xl mx-auto relative rounded-lg overflow-hidden shadow-2xl">
+        <div className="w-full max-w-5xl mx-auto relative rounded-lg overflow-hidden shadow-lg">
           <iframe 
             src="https://drive.google.com/file/d/1ZuSsKRMN93DQiDqovdD2sFjU7s-9xgwM/preview" 
             width="100%" 
             height="500" 
             allow="autoplay"
-            className="w-full"
+            className="w-full border-0"
           ></iframe>
         </div>
         
-        {/* Voting information - POSITIONED BELOW THE VIDEO */}
-        <div className="mt-12">
+        {/* Voting information - Below Video but hidden on homepage as per the design */}
+        <div className="mt-12 hidden">
           <div className="bg-nautical-gold/90 text-nautical-black py-4 px-8 rounded-md max-w-3xl mx-auto">
             <p className="text-lg md:text-xl font-medium text-center">
               Vota el 29 de abril de 10:00 a 20:00 en el Club Náutico de Gran Canaria
