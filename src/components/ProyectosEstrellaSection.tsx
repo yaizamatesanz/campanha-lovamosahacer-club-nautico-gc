@@ -12,7 +12,7 @@ const ProyectosEstrellaSection = () => {
           <Card className="overflow-hidden hover:shadow-lg transition-shadow animate-fade-in">
             <div className="h-64 overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                src="/lovable-uploads/de4cda7d-9c97-43ea-830a-539117a395de.png" 
                 alt="Vestuarios renovados" 
                 className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
               />
@@ -33,7 +33,7 @@ const ProyectosEstrellaSection = () => {
           <Card className="overflow-hidden hover:shadow-lg transition-shadow animate-fade-in" style={{animationDelay: "0.2s"}}>
             <div className="h-64 overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                src="/lovable-uploads/3de752c7-35e1-455c-a413-651717b85969.png" 
                 alt="Zona Chillout" 
                 className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
               />
