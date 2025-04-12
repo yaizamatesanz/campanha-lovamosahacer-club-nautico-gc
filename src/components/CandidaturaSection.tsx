@@ -69,7 +69,7 @@ const teamMembers: TeamMember[] = [
     name: "Eduardo Ojeda Ensell",
     position: "Vice-secretario",
     age: 53,
-    image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+    image: "/lovable-uploads/1c08babc-dd55-42ad-9f6e-f05785c3cc0f.png"
   },
   {
     name: "Alicia Cabrera Mateos",
