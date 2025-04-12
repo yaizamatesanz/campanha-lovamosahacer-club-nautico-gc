@@ -51,7 +51,7 @@ const teamMembers: TeamMember[] = [
     name: "Elena Mª Rodríguez Fominaya",
     position: "Presidenta de Cultura",
     age: 64,
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+    image: "/lovable-uploads/53075023-67e5-4fa8-8aa1-1afd8e25e801.png"
   },
   {
     name: "Alejandro Martín Santana",
@@ -81,13 +81,13 @@ const teamMembers: TeamMember[] = [
     name: "Fernando Jiménez del Campo",
     position: "Vocal (Náutica)",
     age: 58,
-    image: "https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+    image: "/lovable-uploads/4d3fdfc8-ceda-4fea-95a3-ec1323cd5378.png"
   },
   {
     name: "Enrique Viera Molina",
     position: "Vocal (Área)",
     age: 58,
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+    image: "/lovable-uploads/5cab1f9c-661e-4a78-b27c-414ed168b874.png"
   },
   {
     name: "Mª José Ortiz Guillén",
