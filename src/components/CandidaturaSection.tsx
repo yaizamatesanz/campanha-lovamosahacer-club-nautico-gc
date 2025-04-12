@@ -63,7 +63,7 @@ const teamMembers: TeamMember[] = [
     name: "Manuel Padrón Rodríguez",
     position: "Vice-comodoro",
     age: 47,
-    image: "/lovable-uploads/bce03a19-602a-4ec9-ba44-bc4423ae8f50.png"
+    image: "/lovable-uploads/119d9b13-2ed4-4168-906d-fb47ba105705.png"
   },
   {
     name: "Eduardo Ojeda Ensell",
