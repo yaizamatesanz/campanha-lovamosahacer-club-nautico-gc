@@ -13,44 +13,79 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   {
     name: "Adolfo López Martínez",
-    position: "Candidato a Presidente",
+    position: "Presidente",
     image: "/lovable-uploads/57a92179-c9d6-4153-bb68-b0d1b707098e.png",
     featured: true
   },
   {
-    name: "Isabel Sánchez",
-    position: "Vicepresidenta",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
-  },
-  {
-    name: "Francisco Rodríguez",
-    position: "Secretario",
+    name: "Fernando Ojeda Álvarez",
+    position: "Comodoro",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
   },
   {
-    name: "María González",
-    position: "Tesorera",
-    image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
-  },
-  {
-    name: "Pedro Ortiz",
-    position: "Vocal",
+    name: "Joaquín Espinosa Chirino",
+    position: "Secretario",
     image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
   },
   {
-    name: "Ana Martín",
-    position: "Vocal",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
-  },
-  {
-    name: "Carlos Hernández",
-    position: "Vocal",
+    name: "Matías Jiménez Brito",
+    position: "Contador",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
   },
   {
-    name: "Laura Díaz",
-    position: "Vocal",
+    name: "Ana Mª Blázquez Santana",
+    position: "Tesorera",
+    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+  },
+  {
+    name: "Mavi Jiménez Sarmiento",
+    position: "Presidenta de Recreo",
+    image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+  },
+  {
+    name: "Elena Mª Rodríguez Fominaya",
+    position: "Presidenta de Cultura",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+  },
+  {
+    name: "Alejandro Martín Santana",
+    position: "Vicepresidente",
     image: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+  },
+  {
+    name: "Manuel Padrón Rodríguez",
+    position: "Vicecomodoro",
+    image: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+  },
+  {
+    name: "Eduardo Ojeda Ensell",
+    position: "Vicesecretario",
+    image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+  },
+  {
+    name: "Alicia Cabrera Mateos",
+    position: "Vicepresidenta de Recreo",
+    image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+  },
+  {
+    name: "Fernando Jiménez del Campo",
+    position: "Vocal",
+    image: "https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+  },
+  {
+    name: "Enrique Viera Molina",
+    position: "Vocal",
+    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+  },
+  {
+    name: "María José Ortiz Guillén",
+    position: "Vocal",
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+  },
+  {
+    name: "Carmen Viniegra Guinea",
+    position: "Vocal",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
   }
 ];
 
