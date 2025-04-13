@@ -11,17 +11,38 @@ const ProyectosEstrellaSection = () => {
     "/lovable-uploads/219d5d6a-1a72-40b7-af9b-cf9e0ab50df4.png"
   ];
   
-  const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
+  // Imágenes para el carrusel de los Vestuarios Renovados
+  const vestuariosImages = [
+    "/lovable-uploads/de4cda7d-9c97-43ea-830a-539117a395de.png",
+    "/lovable-uploads/60231c62-324f-41aa-b70d-ed757372b9a9.png",
+    "/lovable-uploads/b68ec177-3625-4181-969b-ec68b6d41adc.png",
+    "/lovable-uploads/9f50bf15-5b58-4f29-8d12-d2790becf2a0.png"
+  ];
   
-  const goToPreviousImage = () => {
-    setCurrentImageIndex((prevIndex) => 
+  const [currentChilloutIndex, setCurrentChilloutIndex] = React.useState(0);
+  const [currentVestuariosIndex, setCurrentVestuariosIndex] = React.useState(0);
+  
+  const goToPreviousChilloutImage = () => {
+    setCurrentChilloutIndex((prevIndex) => 
       prevIndex === 0 ? chilloutImages.length - 1 : prevIndex - 1
     );
   };
   
-  const goToNextImage = () => {
-    setCurrentImageIndex((prevIndex) => 
+  const goToNextChilloutImage = () => {
+    setCurrentChilloutIndex((prevIndex) => 
       prevIndex === chilloutImages.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+  
+  const goToPreviousVestuariosImage = () => {
+    setCurrentVestuariosIndex((prevIndex) => 
+      prevIndex === 0 ? vestuariosImages.length - 1 : prevIndex - 1
+    );
+  };
+  
+  const goToNextVestuariosImage = () => {
+    setCurrentVestuariosIndex((prevIndex) => 
+      prevIndex === vestuariosImages.length - 1 ? 0 : prevIndex + 1
     );
   };
 
@@ -36,12 +57,12 @@ const ProyectosEstrellaSection = () => {
             <div className="h-64 overflow-hidden relative">
               <div className="relative w-full h-full">
                 <Image 
-                  src={chilloutImages[currentImageIndex]} 
-                  alt={`Zona Chillout imagen ${currentImageIndex + 1}`} 
+                  src={chilloutImages[currentChilloutIndex]} 
+                  alt={`Zona Chillout imagen ${currentChilloutIndex + 1}`} 
                   className="w-full h-64 object-cover transition-all duration-300"
                 />
                 <button 
-                  onClick={goToPreviousImage}
+                  onClick={goToPreviousChilloutImage}
                   className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 rounded-full h-8 w-8 flex items-center justify-center shadow-md"
                   aria-label="Imagen anterior"
                 >
@@ -50,7 +71,7 @@ const ProyectosEstrellaSection = () => {
                   </svg>
                 </button>
                 <button 
-                  onClick={goToNextImage}
+                  onClick={goToNextChilloutImage}
                   className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 rounded-full h-8 w-8 flex items-center justify-center shadow-md"
                   aria-label="Siguiente imagen"
                 >
@@ -62,8 +83,8 @@ const ProyectosEstrellaSection = () => {
                   {chilloutImages.map((_, index) => (
                     <button
                       key={index}
-                      className={`h-2 w-2 rounded-full ${index === currentImageIndex ? 'bg-white' : 'bg-white/50'}`}
-                      onClick={() => setCurrentImageIndex(index)}
+                      className={`h-2 w-2 rounded-full ${index === currentChilloutIndex ? 'bg-white' : 'bg-white/50'}`}
+                      onClick={() => setCurrentChilloutIndex(index)}
                       aria-label={`Ir a imagen ${index + 1}`}
                     />
                   ))}
@@ -86,14 +107,44 @@ const ProyectosEstrellaSection = () => {
             </div>
           </div>
           
-          {/* Vestuarios Renovados */}
+          {/* Vestuarios Renovados con Carrusel */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
-            <div className="h-64 overflow-hidden">
-              <img 
-                src="/lovable-uploads/de4cda7d-9c97-43ea-830a-539117a395de.png" 
-                alt="Vestuarios renovados" 
-                className="w-full h-full object-cover"
-              />
+            <div className="h-64 overflow-hidden relative">
+              <div className="relative w-full h-full">
+                <Image 
+                  src={vestuariosImages[currentVestuariosIndex]} 
+                  alt={`Vestuarios renovados imagen ${currentVestuariosIndex + 1}`} 
+                  className="w-full h-64 object-cover transition-all duration-300"
+                />
+                <button 
+                  onClick={goToPreviousVestuariosImage}
+                  className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 rounded-full h-8 w-8 flex items-center justify-center shadow-md"
+                  aria-label="Imagen anterior"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M15 18l-6-6 6-6" />
+                  </svg>
+                </button>
+                <button 
+                  onClick={goToNextVestuariosImage}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 rounded-full h-8 w-8 flex items-center justify-center shadow-md"
+                  aria-label="Siguiente imagen"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M9 18l6-6-6-6" />
+                  </svg>
+                </button>
+                <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1">
+                  {vestuariosImages.map((_, index) => (
+                    <button
+                      key={index}
+                      className={`h-2 w-2 rounded-full ${index === currentVestuariosIndex ? 'bg-white' : 'bg-white/50'}`}
+                      onClick={() => setCurrentVestuariosIndex(index)}
+                      aria-label={`Ir a imagen ${index + 1}`}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
             <div className="p-6">
               <h3 className="text-3xl font-bold text-nautical-blue mb-4">Vestuarios Renovados</h3>
