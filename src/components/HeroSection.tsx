@@ -24,8 +24,12 @@ const HeroSection = () => {
       </div>
       
       {/* Video container - full width */}
-      <div className="w-full relative rounded-lg overflow-hidden shadow-lg">
-        <iframe src="https://drive.google.com/file/d/1ZuSsKRMN93DQiDqovdD2sFjU7s-9xgwM/preview" width="100%" height="500" allow="autoplay" className="w-full border-0"></iframe>
+      <div className="w-full relative rounded-lg overflow-hidden shadow-lg" style={{ paddingBottom: '56.25%', height: 0 }}>
+        <iframe 
+          src="https://drive.google.com/file/d/1PxYVYWg35lbc7h8gPOljZIJSLSsMe3M2/preview" 
+          allow="autoplay" 
+          className="absolute top-0 left-0 w-full h-full border-0"
+        ></iframe>
       </div>
       
       {/* Voting information - Now visible below the video */}
