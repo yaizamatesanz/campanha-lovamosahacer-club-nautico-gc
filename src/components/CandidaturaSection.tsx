@@ -85,7 +85,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Enrique Viera Molina",
-    position: "Vocal (Área)",
+    position: "Vocal (Cultura)",
     age: 58,
     image: "/lovable-uploads/5cab1f9c-661e-4a78-b27c-414ed168b874.png"
   },
