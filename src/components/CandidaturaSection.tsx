@@ -93,7 +93,7 @@ const teamMembers: TeamMember[] = [
     name: "Mª José Ortiz Guillén",
     position: "Vocal (Cultura)",
     age: 48,
-    image: "/lovable-uploads/ef59ed7d-c6b5-463f-b515-7b31d2a2ca28.png"
+    image: "/lovable-uploads/bb961889-57a2-4401-af26-f18279e662c5.png"
   },
   {
     name: "Carmen Viniegra Guinea",
@@ -114,7 +114,7 @@ const CandidaturaSection = () => {
             <img src="/lovable-uploads/9bb8737f-7814-4d8d-ac45-23e6b6d76f96.png" alt="Equipo completo" className="w-full h-full object-cover" />
             <div className="absolute bottom-0 left-0 right-0 p-6 text-white bg-gradient-to-t from-[rgba(0,0,0,0.7)] to-transparent">
               <h3 className="text-3xl md:text-4xl font-bold mb-2">Equipo Adolfo López</h3>
-              <p className="text-lg md:text-xl">Comprometidos con el futuro del Real Club N��utico</p>
+              <p className="text-lg md:text-xl">Comprometidos con el futuro del Real Club N����utico</p>
             </div>
           </AspectRatio>
         </div>
