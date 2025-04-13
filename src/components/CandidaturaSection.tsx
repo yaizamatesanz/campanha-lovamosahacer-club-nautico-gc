@@ -90,7 +90,7 @@ const teamMembers: TeamMember[] = [
     image: "/lovable-uploads/5cab1f9c-661e-4a78-b27c-414ed168b874.png"
   },
   {
-    name: "Mª José Ortiz Guillén",
+    name: "José Ortiz Guillén",
     position: "Vocal (Cultura)",
     age: 48,
     image: "/lovable-uploads/012d4fb7-d819-44bc-b023-c6b13f6c9ba8.png"
