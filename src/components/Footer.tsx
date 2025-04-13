@@ -1,4 +1,3 @@
-
 import { ChevronUp } from "lucide-react";
 import Image from "@/components/ui/image";
 
@@ -42,7 +41,7 @@ const Footer = () => {
               className="object-contain"
             />
           </a>
-          <p className="text-sm">Diseño y comunicación por Digito Comunicación</p>
+          <p className="text-sm">Powered by Dìgito Cominicaciòn</p>
         </div>
         
         {/* Back to top button */}
