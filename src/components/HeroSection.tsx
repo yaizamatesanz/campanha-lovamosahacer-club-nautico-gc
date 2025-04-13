@@ -26,9 +26,11 @@ const HeroSection = () => {
       {/* Video container - full width */}
       <div className="w-full relative rounded-lg overflow-hidden shadow-lg" style={{ paddingBottom: '56.25%', height: 0 }}>
         <iframe 
-          src="https://drive.google.com/file/d/1PxYVYWg35lbc7h8gPOljZIJSLSsMe3M2/preview" 
-          allow="autoplay" 
+          src="https://www.youtube.com/embed/1JAuxcE_9wM" 
           className="absolute top-0 left-0 w-full h-full border-0"
+          frameBorder="0"
+          allow="autoplay; fullscreen"
+          allowFullScreen
         ></iframe>
       </div>
       
