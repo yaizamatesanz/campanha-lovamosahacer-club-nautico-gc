@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
@@ -91,7 +92,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Mª José Ortiz Guillén",
-    position: "Vocal (Cultura)",
+    position: "Vocal (Área)",
     age: 48,
     image: "/lovable-uploads/1b849463-1131-4c4f-9536-4bbe0b6ab00d.png"
   },
