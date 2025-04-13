@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { ChevronDown } from "lucide-react";
 
@@ -14,7 +13,7 @@ const CartaSocioSection = () => {
               <div className={`bg-white/10 rounded-xl p-6 ${expanded ? "mb-6" : ""}`}>
                 <p className="text-xl font-medium mb-6 italic text-white">Estimado consocio,</p>
                 
-                <div className={expanded ? "" : "line-clamp-3"}>
+                <div className={expanded ? "" : "line-clamp-9"}>
                   <p className="mb-4 text-white">
                     El próximo día 29 de abril de 10:00 a 20:00 horas, tenemos una cita donde 
                     podrás ejercer el derecho al voto para la elección de la Junta Directiva que te 
@@ -27,7 +26,6 @@ const CartaSocioSection = () => {
                     que ahora, por normativa estatutaria, debe ser renovado.
                   </p>
                   
-                  {/* Additional paragraphs will be shown when expanded */}
                   {expanded && <>
                       <p className="mb-4 text-white">
                         En esta nueva etapa me acompañan algunos de los miembros de la anterior Junta Directiva que desempeñaron 
