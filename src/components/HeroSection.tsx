@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 
 const HeroSection = () => {
@@ -25,7 +24,7 @@ const HeroSection = () => {
       {/* Video container - full width */}
       <div className="w-full relative rounded-lg overflow-hidden shadow-lg" style={{ paddingBottom: '56.25%', height: 0 }}>
         <iframe 
-          src="https://www.youtube.com/embed/1JAuxcE_9wM?autoplay=1&mute=1" 
+          src="https://www.youtube.com/embed/wdDxgZwTkiM?autoplay=1&mute=1" 
           className="absolute top-0 left-0 w-full h-full border-0"
           frameBorder="0"
           allow="autoplay; fullscreen"
@@ -45,4 +44,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
