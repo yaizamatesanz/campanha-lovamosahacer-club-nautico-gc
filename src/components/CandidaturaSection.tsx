@@ -57,7 +57,7 @@ const teamMembers: TeamMember[] = [
   {
     name: "Alejandro Martín Santana",
     position: "Vicepresidente",
-    age: 63,
+    age: 53, // Updated from 63 to 53
     image: "/lovable-uploads/bc0e4138-c93e-4468-a9f4-658e5a515250.png"
   },
   {
