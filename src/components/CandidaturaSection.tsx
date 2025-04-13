@@ -48,7 +48,7 @@ const teamMembers: TeamMember[] = [
     image: "/lovable-uploads/974a134d-515b-479c-b54c-785d3f3af4d3.png"
   },
   {
-    name: "Elena Mª Rodríguez Fominaya",
+    name: "Elena Rodríguez Fominaya",
     position: "Presidenta de Cultura",
     age: 64,
     image: "/lovable-uploads/53075023-67e5-4fa8-8aa1-1afd8e25e801.png"
