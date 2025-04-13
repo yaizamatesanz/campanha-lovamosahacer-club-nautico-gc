@@ -37,6 +37,14 @@ const Footer = () => {
               />
             </a>
             <p className="text-sm">Powered by Dìgito Cominicaciòn</p>
+            <a 
+              href="https://www.digitocomunicacion.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-sm text-white/80 hover:text-white underline mt-1"
+            >
+              www.digitocomunicacion.com
+            </a>
           </div>
         
           {/* Back to top button */}
