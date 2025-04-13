@@ -36,7 +36,7 @@ const Footer = () => {
                 className="object-contain"
               />
             </a>
-            <p className="text-sm">Powered by Dìgito Cominicaciòn</p>
+            <p className="text-sm">Powered by Dìgito Comunicaciòn</p>
             <a 
               href="https://www.digitocomunicacion.com" 
               target="_blank" 
@@ -64,3 +64,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
