@@ -1,21 +1,47 @@
 
 import React from 'react';
+import { 
+  Carousel, 
+  CarouselContent, 
+  CarouselItem, 
+  CarouselPrevious, 
+  CarouselNext 
+} from "@/components/ui/carousel";
+import Image from '@/components/ui/image';
 
 const ProyectosEstrellaSection = () => {
+  // Imágenes para el carrusel de la Zona Chillout
+  const chilloutImages = [
+    "/lovable-uploads/3de752c7-35e1-455c-a413-651717b85969.png",
+    "/lovable-uploads/6ff07341-23d3-458b-9cb7-28b2be8622a9.png",
+    "/lovable-uploads/3efa9456-b98b-4d76-b996-87d1dbd64144.png",
+    "/lovable-uploads/219d5d6a-1a72-40b7-af9b-cf9e0ab50df4.png"
+  ];
+
   return (
     <section id="proyectos" className="section-padding bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-nautical-blue mb-12 font-playfair text-center">Proyectos Estrella</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {/* Zona Chillout */}
+          {/* Zona Chillout con Carrusel */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
-            <div className="h-64 overflow-hidden">
-              <img 
-                src="/lovable-uploads/3de752c7-35e1-455c-a413-651717b85969.png" 
-                alt="Zona Chillout" 
-                className="w-full h-full object-cover"
-              />
+            <div className="h-64 overflow-hidden relative">
+              <Carousel className="w-full">
+                <CarouselContent>
+                  {chilloutImages.map((img, index) => (
+                    <CarouselItem key={index}>
+                      <Image 
+                        src={img} 
+                        alt={`Zona Chillout imagen ${index + 1}`} 
+                        className="w-full h-64 object-cover"
+                      />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2" />
+                <CarouselNext className="absolute right-2 top-1/2 -translate-y-1/2" />
+              </Carousel>
             </div>
             <div className="p-6">
               <h3 className="text-3xl font-bold text-nautical-blue mb-4">Zona Chillout</h3>
