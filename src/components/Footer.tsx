@@ -1,5 +1,6 @@
 
 import { ChevronUp } from "lucide-react";
+import Image from "@/components/ui/image";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -23,6 +24,25 @@ const Footer = () => {
           <div className="text-center">
             <p className="text-lg">Campaña electoral 2025 · 14-28 abril</p>
           </div>
+        </div>
+        
+        {/* New logo and link section */}
+        <div className="flex flex-col items-center justify-center mb-6">
+          <a 
+            href="https://www.digitocomunicacion.com" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="mb-4"
+          >
+            <Image 
+              src="/lovable-uploads/8bf99b2e-2c9b-401b-b389-4acbabc7e05a.png" 
+              alt="Digito Comunicación Logo" 
+              width={200} 
+              height={100} 
+              className="object-contain"
+            />
+          </a>
+          <p className="text-sm">Diseño y comunicación por Digito Comunicación</p>
         </div>
         
         {/* Back to top button */}
