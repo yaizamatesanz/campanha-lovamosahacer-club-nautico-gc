@@ -26,13 +26,13 @@ const CartaSocioSection = () => {
                     que ahora, por normativa estatutaria, debe ser renovado.
                   </p>
                   
+                  <p className="mb-4 text-white">
+                    En esta nueva etapa me acompañan algunos de los miembros de la anterior Junta Directiva que desempeñaron 
+                    una labor efectiva, completa y exitosa, a los que se le suman otros nuevos, personas que viven intensamente 
+                    nuestro Club con un claro conocimiento del mismo y la ilusión de renovar.
+                  </p>
+                  
                   {expanded && <>
-                      <p className="mb-4 text-white">
-                        En esta nueva etapa me acompañan algunos de los miembros de la anterior Junta Directiva que desempeñaron 
-                        una labor efectiva, completa y exitosa, a los que se le suman otros nuevos, personas que viven intensamente 
-                        nuestro Club con un claro conocimiento del mismo y la ilusión de renovar.
-                      </p>
-                      
                       <p className="mb-4 text-white">
                         Durante todo este período, habrás podido comprobar cuál ha sido nuestro sistema de trabajo, basado 
                         fundamentalmente en el tiempo de dedicación, excelencia y control en las contrataciones, atención cercana 
