@@ -116,7 +116,7 @@ const CartaSocioSection = () => {
                       </p>
 
                       <p className="mb-4 text-white">
-                        Previa al día 29 (día de votación), en la noche del día 28 presentaremos a las 18:00h en el
+                        Previa al día 29 (día de votación), en la noche del día 28 presentaremos a las 18:00 y 19:00 horas en el
                         Salón Los Paragüitas del Club, nuestro programa. Te esperamos.
                       </p>
 
