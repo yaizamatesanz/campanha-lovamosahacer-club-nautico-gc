@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Calendar, Clock, MapPin } from "lucide-react";
 
@@ -25,7 +26,7 @@ const ProgramaPresentacionSection = () => {
                 <Clock className="h-8 w-8 text-nautical-gold flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="text-xl font-bold text-nautical-blue">Horario</h4>
-                  <p className="text-xl text-nautical-blue">19:30 horas</p>
+                  <p className="text-xl text-nautical-blue">18:00 y 19:00 horas</p>
                 </div>
               </div>
               
