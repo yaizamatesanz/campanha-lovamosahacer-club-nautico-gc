@@ -51,17 +51,6 @@ const CartaSocioSection = () => {
                       </p>
 
                       <p className="mb-4 text-white">
-                        Como proyectos estrella, está el de la reforma integral de los vestuarios, cuyo proyecto
-                        está terminado disponiéndose de las correspondientes ofertas y comparativos.
-                      </p>
-
-                      <p className="mb-4 text-white">
-                        Otro proyecto estrella también finalizado y diseñado es el del Chill Out, que sustituirá al
-                        actual quiosco de la terraza solárium y proporcionará una calidad a la nueva instalación
-                        como tú deseas y te mereces.
-                      </p>
-
-                      <p className="mb-4 text-white">
                         Para la náutica, hemos diseñado un sistema moderno e innovador para la nueva rampa de
                         varada de embarcaciones lejos de los obsoletos sistemas de acabado como el actual, que
                         se deterioraron en poco tiempo, haciendo intransitable y peligroso el uso de la misma.
