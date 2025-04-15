@@ -1,5 +1,5 @@
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import NavBar from "@/components/NavBar";
 import HeroSection from "@/components/HeroSection";
 import CandidaturaSection from "@/components/CandidaturaSection";
@@ -22,7 +22,7 @@ const Index = () => {
       <HeroSection />
       <CandidaturaSection />
       <DecalogoSection />
-      <ProyectosEstrellaSection />
+      {/* ProyectosEstrellaSection has been removed */}
       <CartaSocioSection />
       <VotacionSection />
       <ProgramaPresentacionSection />
